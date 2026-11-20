@@ -1,0 +1,585 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf5;
+    color: #292522;
+}
+
+header {
+    padding: 22px 8%;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+header h2 {
+    color: #e87524;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 18px;
+    color: #292522;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #756b63;
+    max-width: 550px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.hero a {
+    background: #e87524;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.hero a:hover {
+    background: #c85d16;
+}
+
+#features {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffffff;
+}
+
+#features h2 {
+    margin-bottom: 15px;
+    color: #d9671c;
+}
+
+#features p {
+    color: #756b63;
+}
+
+
+/* Login and Registration Pages */
+
+.auth-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.auth-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #292522;
+}
+
+.auth-card > p {
+    text-align: center;
+    color: #756b63;
+    margin-bottom: 25px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.auth-card input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e5d8cc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.auth-card button {
+    padding: 13px;
+    background: #e87524;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-card button:hover {
+    background: #c85d16;
+}
+
+.auth-card .auth-link {
+    margin-top: 22px;
+    margin-bottom: 0;
+}
+
+.auth-link a {
+    color: #e87524;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #d9671c;
+    font-weight: bold;
+}
+
+.navbar nav .register-btn {
+    background: #e87524;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 7px;
+}
+
+.navbar nav .register-btn:hover {
+    background: #c85d16;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+.dashboard-heading {
+    margin-bottom: 35px;
+}
+
+.dashboard-heading h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.dashboard-heading p {
+    color: #756b63;
+}
+
+.add-product,
+.tracked-products,
+.price-history,
+.notifications {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard h2 {
+    color: #d9671c;
+    margin-bottom: 20px;
+}
+
+.add-product form {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+}
+
+.add-product label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.add-product input {
+    padding: 13px;
+    border: 1px solid #e5d8cc;
+    border-radius: 7px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.add-product button {
+    padding: 13px;
+    background: #e87524;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-product button:hover {
+    background: #c85d16;
+}
+
+.tracked-products p,
+.price-history p,
+.notifications p {
+    color: #756b63;
+}
+
+
+
+/* Modern Dashboard Theme */
+
+body {
+    background: linear-gradient(135deg, #fff8f0, #fff0e3, #fffaf6);
+}
+
+/* Dashboard Heading */
+
+.dashboard-heading {
+    background: linear-gradient(120deg, #e87524, #f49a51, #ffc18e);
+    padding: 38px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(220, 105, 30, 0.18);
+}
+
+.dashboard-heading h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.dashboard-heading p {
+    color: #fff4e9;
+    font-size: 16px;
+}
+
+/* Dashboard Cards */
+
+.add-product,
+.tracked-products,
+.price-history,
+.notifications {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #f6dfcc;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(120, 72, 35, 0.07);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.add-product:hover,
+.tracked-products:hover,
+.price-history:hover,
+.notifications:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(120, 72, 35, 0.12);
+}
+
+.dashboard h2 {
+    color: #c75b16;
+    font-size: 22px;
+}
+
+/* Product Form */
+
+.add-product input {
+    background: #fffaf6;
+    border: 1px solid #efd5c0;
+    border-radius: 10px;
+    padding: 15px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.add-product input:focus {
+    outline: none;
+    border-color: #ed873e;
+    box-shadow: 0 0 0 4px rgba(237, 135, 62, 0.13);
+}
+
+.add-product button {
+    background: linear-gradient(120deg, #e87524, #f49a51);
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(220, 105, 30, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-product button:hover {
+    background: linear-gradient(120deg, #cc5e17, #e87524);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(220, 105, 30, 0.25);
+}
+
+/* Navigation */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #f5e3d4;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 600px) {
+    .dashboard {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .dashboard-heading {
+        padding: 25px;
+    }
+
+    .dashboard-heading h1 {
+        font-size: 28px;
+    }
+
+    .add-product,
+    .tracked-products,
+    .price-history,
+    .notifications {
+        padding: 20px;
+    }
+}
+
+
+
+/* Modern Homepage */
+
+.hero {
+    min-height: 75vh;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #fff0e2, #ffd2ad, #f8a66b);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-tag {
+    background: rgba(255, 255, 255, 0.65);
+    color: #bd5a1b;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.12;
+    color: #392719;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #76533c;
+    max-width: 580px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-buttons a {
+    padding: 14px 25px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.hero-buttons .primary-btn {
+    background: #df6d22;
+    color: white;
+    box-shadow: 0 6px 15px rgba(190, 85, 25, 0.2);
+}
+
+.hero-buttons .primary-btn:hover {
+    background: #bd5415;
+    transform: translateY(-3px);
+}
+
+.hero-buttons .secondary-btn {
+    background: white;
+    color: #c45e1c;
+    border: 1px solid #f0c19e;
+}
+
+.hero-buttons .secondary-btn:hover {
+    transform: translateY(-3px);
+    background: #fff8f1;
+}
+
+/* Feature Section */
+
+#features {
+    padding: 75px 8%;
+    background: #fffaf5;
+}
+
+#features h2 {
+    font-size: 30px;
+    color: #392719;
+    margin-bottom: 12px;
+}
+
+.features-intro {
+    color: #8b7666;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border: 1px solid #f4dfcd;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 8px 22px rgba(100, 60, 30, 0.06);
+    transition: 0.25s;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(100, 60, 30, 0.12);
+}
+
+.feature-icon {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #c75b16;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #756b63;
+    line-height: 1.7;
+}
+
+@media (max-width: 750px) {
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    #features {
+        padding: 50px 20px;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+}
+
+
+/* Modern Authentication Pages */
+
+.auth-container {
+    background: linear-gradient(135deg, #fff4e9, #ffe0c7, #fff8f1);
+    min-height: 88vh;
+    padding: 45px 20px;
+}
+
+.auth-card {
+    max-width: 440px;
+    padding: 40px;
+    border: 1px solid #f5dfce;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(130, 72, 35, 0.10);
+}
+
+.auth-card h1 {
+    font-size: 30px;
+    color: #392719;
+}
+
+.auth-card > p {
+    color: #897363;
+    line-height: 1.6;
+}
+
+.auth-card label {
+    color: #594332;
+    font-size: 14px;
+}
+
+.auth-card input {
+    background: #fffaf6;
+    border: 1px solid #ead7c7;
+    border-radius: 9px;
+    padding: 14px;
+    transition: 0.2s;
+}
+
+.auth-card input:focus {
+    outline: none;
+    border-color: #e87524;
+    box-shadow: 0 0 0 4px rgba(232, 117, 36, 0.12);
+}
+
+.auth-card button {
+    background: linear-gradient(120deg, #df6d22, #f39a53);
+    border-radius: 9px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(190, 85, 25, 0.18);
+    transition: 0.25s;
+}
+
+.auth-card button:hover {
+    background: #c75b16;
+    transform: translateY(-2px);
+}
+
+.auth-link a {
+    color: #d9671c;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 27px 22px;
+    }
+}

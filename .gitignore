@@ -1,0 +1,21 @@
+# Maven build files
+target/
+**/target/
+
+# Java compiled files
+*.class
+
+# Deployment files
+*.war
+
+# IDE files
+.vscode/
+.idea/
+
+# Secret files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
